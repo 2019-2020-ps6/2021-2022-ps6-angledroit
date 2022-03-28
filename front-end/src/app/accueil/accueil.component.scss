@@ -1,0 +1,50 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    color: #000000;
+    line-height : 1.6;
+    
+
+}
+
+#showcase{
+    background-image: url("https://images.pexels.com/photos/339620/pexels-photo-339620.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    height: 100vh; //pour que l'image soit dans toute l'écran
+    background-position: center;
+    background-size: cover;
+    display : flex;
+    flex-direction: column; 
+    justify-content: center;  //à supprimer après pour qu'il soit en haut 
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+
+
+}
+
+#showcase h1{
+    font-size: 50px;
+}
+#showcase p{
+    font-size: 25px;
+}
+#showcase .button {
+    font-size: 18px;
+    text-decoration: solid;
+    color: #926239;
+    border: #926239 2px solid;
+    padding: 30px 100px;
+    border-radius: 10px;
+    margin-top: 25px;
+
+}
+
+#showcase .button:hover{
+    background: #926239;
+    color: #fff;
+}
