@@ -11,6 +11,7 @@ import {QuizService} from '../../services/quiz.service';
 })
 export class QuiztestComponent implements OnInit {
   indexQuiz = 0;
+  indexQuestion = 0;
   public question: Question;
   public answer: Answer;
   public quiz: Quiz;
@@ -24,7 +25,5 @@ export class QuiztestComponent implements OnInit {
     this.id = this.route.snapshot.paramMap.get('id');
     this.quizService.setSelectedQuiz(this.id);
   }
-
-
 
 }

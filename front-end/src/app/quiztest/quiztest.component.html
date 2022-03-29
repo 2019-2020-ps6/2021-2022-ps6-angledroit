@@ -4,17 +4,17 @@
 
 </head>
 <body>
-<div class="Quiz-Page">
+<div class="Quiz-Page" *ngIf="quiz">
   <h1>Quiz</h1>
   <div class="QuestionImage">
   <h2 class="question">{{quiz.questions[indexQuiz].label}}</h2>
     <h1> <img src="https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></h1>
   </div>
   <div class="btn-container">
-    <button value="1" class="AnswerBtn">Réponse1</button>
-    <button value="2" class="AnswerBtn">Réponse2</button>
-    <button value="3" class="AnswerBtn">Réponse3</button>
-    <button value="4" class="AnswerBtn">Réponse4</button>
+    <button value="1" class="AnswerBtn">{{quiz[indexQuiz].questions[indexQuestion].answers[0]}}</button>
+    <button value="2" class="AnswerBtn">{{quiz.questions[indexQuiz].answers[1]}}</button>
+    <button value="3" class="AnswerBtn">{{quiz.questions[indexQuiz].answers[2]}}</button>
+    <button value="4" class="AnswerBtn">{{quiz.questions[indexQuiz].answers[3]}}</button>
 
 
   </div>
