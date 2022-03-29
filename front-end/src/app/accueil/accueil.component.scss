@@ -8,7 +8,7 @@ body{
     font-size: 17px;
     color: #000000;
     line-height : 1.6;
-    
+
 
 }
 
@@ -18,8 +18,8 @@ body{
     background-position: center;
     background-size: cover;
     display : flex;
-    flex-direction: column; 
-    justify-content: center;  //à supprimer après pour qu'il soit en haut 
+    flex-direction: column;
+    justify-content: center;  //à supprimer après pour qu'il soit en haut
     align-items: center;
     text-align: center;
     padding: 0 20px;
@@ -34,6 +34,8 @@ body{
     font-size: 25px;
 }
 #showcase .button {
+    position: relative;
+    top: 40px; left: 40px;
     font-size: 18px;
     text-decoration: solid;
     color: #926239;
