@@ -11,7 +11,7 @@ import { QuizService } from 'src/services/quiz.service';
 })
 export class GameQuizComponent implements OnInit {
 
-  indexQuiz: number = 0;
+  indexQuestion: number = 0;
   CorrectAnsw: number = 0;
   selectedAnswer = new Map();
   public question: Question;
@@ -32,10 +32,15 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
   }
 
   isEnd() {
-    return this.indexQuiz >= this.quiz.questions.length;
+    return this.indexQuestion >= this.quiz.questions.length;
   }
   next(){
-    this.indexQuiz++;
+    this.indexQuestion++;
+  }
+  isCorrect(){
+    if(this.answer){
+      this.CorrectAnsw++;
+    }
   }
 
 }
