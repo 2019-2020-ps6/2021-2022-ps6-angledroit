@@ -1,9 +1,5 @@
-<head>
-  <meta charset="UTF-8">
-  <title> Full Page Image</title>
 
-</head>
-<body>
+<body >
 <div class="Quiz-Page" >
   <h1>Quiz</h1>
   <div class="QuestionImage">
@@ -14,20 +10,26 @@
 
   <div class="btn-container">
     
-    <button value="1" class="AnswerBtn">{{quiz.questions[indexQuiz].answers[0]}}</button>
-    <button value="2" class="AnswerBtn">{{quiz.questions[indexQuiz].answers[1]}}</button>
-    <button value="3" class="AnswerBtn">{{quiz.questions[indexQuiz].answers[2]}}</button>
-    <button value="4" class="AnswerBtn">{{quiz.questions[indexQuiz].answers[3]}}</button>
-    <div  *ngFor="let answer of quiz.questions[indexQuiz].answers;">
-      <button>les Boutons à l'intérieur de cette valise n'apparaissent pas</button>
+    
+
+    
+      
+      <button value="1" class="AnswerBtn">{{quiz.questions[indexQuiz].answers[0].value}}</button>
+      <button value="2" class="AnswerBtn">{{quiz.questions[indexQuiz].answers[1].value}}</button>
+      <button value="3" class="AnswerBtn">{{quiz.questions[indexQuiz].answers[2].value}}</button>
+      <button value="4" class="AnswerBtn">{{quiz.questions[indexQuiz].answers[3].value}}</button>
 
     
         
-    </div>
+    
 
     
-    </div>
+  </div>
   <button class="next-Q" (click)="next()">Question suivante</button>
 </div>
 
+
 </body>
+
+
+
