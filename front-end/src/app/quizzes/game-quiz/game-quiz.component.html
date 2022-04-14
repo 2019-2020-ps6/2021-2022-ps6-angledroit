@@ -8,22 +8,27 @@
     
   </div>
 
-  <div class="btn-container">
+      <div class="btn-container" ngIf="!resultAffiche">
     
     
 
     
       
-      <button value="1" class="AnswerBtn">{{quiz.questions[indexQuestion].answers[0].value}}</button>
-      <button value="2" class="AnswerBtn">{{quiz.questions[indexQuestion].answers[1].value}}</button>
-      <button value="3" class="AnswerBtn">{{quiz.questions[indexQuestion].answers[2].value}}</button>
-      <button value="4" class="AnswerBtn">{{quiz.questions[indexQuestion].answers[3].value}}</button>
+      <button value="1" class="AnswerBtn" (click)="answerQuestion(quiz.questions[indexQuestion].answers[0])">{{quiz.questions[indexQuestion].answers[0].value}}</button>
+      <button value="2" class="AnswerBtn" (click)="answerQuestion(quiz.questions[indexQuestion].answers[1])">{{quiz.questions[indexQuestion].answers[1].value}}</button>
+      <button value="3" class="AnswerBtn" (click)="answerQuestion(quiz.questions[indexQuestion].answers[2])">{{quiz.questions[indexQuestion].answers[2].value}}</button>
+      <button value="4" class="AnswerBtn" (click)="answerQuestion(quiz.questions[indexQuestion].answers[3])">{{quiz.questions[indexQuestion].answers[3].value}}</button>
 
         
     
 
     
-  </div>
+    </div>
+
+<div *ngIf="resultAffiche">
+  <h1>La réponse correcte est : </h1>
+  <div class="AffichageResultat" >{{getCorrectAnswer().value}}</div>
+</div>
   <button class="next-Q" (click)="next()">Question suivante</button>
 </div>
 

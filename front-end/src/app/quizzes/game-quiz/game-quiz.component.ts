@@ -18,6 +18,7 @@ export class GameQuizComponent implements OnInit {
   public answer: Answer;
   public quiz: Quiz;
   resultAffiche : boolean = false;
+  listAnswer : Answer[];
   id : string
 
 
@@ -42,5 +43,38 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
       this.CorrectAnsw++;
     }
   }
+
+  getAnswers(question : Question){
+    this.listAnswer=question.answers;
+    return question.answers;
+  }
+
+  getCorrectAnswer() {
+    for(let i = 0;i<4;i++){
+      if(this.quiz.questions[this.indexQuestion].answers[i].isCorrect){
+        return this.quiz.questions[this.indexQuestion].answers[i];
+      }
+    }
+
+  }
+
+  resultDisplay(){
+    this.resultAffiche = true;
+    setTimeout(()=> {
+      this.resultAffiche = false;
+      this.indexQuestion++;
+    },1000);
+  }
+  answerQuestion(answer : Answer){
+    if(answer.isCorrect) {
+      this.resultDisplay()
+    }
+    
+  }
+
+  
+
+
+
 
 }
