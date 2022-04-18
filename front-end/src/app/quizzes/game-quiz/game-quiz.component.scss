@@ -22,6 +22,7 @@
     margin: 5pc 0 0 16pc;
     border-radius: 10px;
   }
+
   .AnswerBtn {
     margin: 50px 0 0 16pc;
     width: 27%;
@@ -34,14 +35,24 @@
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .AnswerBtn:hover{
     background: lightblue;
     color: #fff;
   }
+
   .Quiz-Page h1 {
     color: white;
     font-family: 'Zen Dots', cursive;
     text-align: center;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  .Score{
+    color: white;
+    font-family: 'Zen Dots', cursive;
+    text-align: right;
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
   }
@@ -53,7 +64,6 @@
     grid-template-columns: auto auto;
     grid-gap: 1px;
   }
-  
   
   .next-Q {
     margin: 5pc 0 0 37.5pc;

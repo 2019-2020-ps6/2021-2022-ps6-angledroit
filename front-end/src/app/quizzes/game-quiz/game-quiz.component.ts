@@ -12,7 +12,7 @@ import { QuizService } from 'src/services/quiz.service';
 export class GameQuizComponent implements OnInit {
 
   indexQuestion: number = 0;
-  CorrectAnsw: number = 0;
+  Score: number = 0;
   selectedAnswer = new Map();
   public question: Question;
   public answer: Answer;
@@ -35,13 +35,9 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
   isEnd() {
     return this.indexQuestion >= this.quiz.questions.length;
   }
+
   next(){
     this.indexQuestion++;
-  }
-  isCorrect(){
-    if(this.answer){
-      this.CorrectAnsw++;
-    }
   }
 
   getAnswers(question : Question){
@@ -55,7 +51,14 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
         return this.quiz.questions[this.indexQuestion].answers[i];
       }
     }
+  }
 
+  getScore(){
+    return this.Score;
+  }
+
+  getindexQuestion(){
+    return this.indexQuestion;
   }
 
   resultDisplay(){
@@ -65,16 +68,12 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
       this.indexQuestion++;
     },1000);
   }
+
   answerQuestion(answer : Answer){
     if(answer.isCorrect) {
+      this.Score++;
       this.resultDisplay()
-    }
-    
-  }
-
   
-
-
-
-
+    }
+  }
 }
