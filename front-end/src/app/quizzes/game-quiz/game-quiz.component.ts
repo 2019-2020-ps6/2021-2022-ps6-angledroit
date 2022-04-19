@@ -24,7 +24,10 @@ export class GameQuizComponent implements OnInit {
 
 
 constructor(private route: ActivatedRoute, private quizService: QuizService,) {
-    this.quizService.quizSelected$.subscribe((quiz) => (this.quiz = quiz));
+    this.quizService.quizSelected$.subscribe((quiz) => {
+      this.quiz = quiz;
+      console.log(quiz)
+    });
   }
 
   ngOnInit(): void {
@@ -72,8 +75,7 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
   answerQuestion(answer : Answer){
     if(answer.isCorrect) {
       this.Score++;
-      this.resultDisplay()
-  
     }
+    this.resultDisplay()
   }
 }
