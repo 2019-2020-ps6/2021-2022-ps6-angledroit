@@ -1,0 +1,35 @@
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">Nom du proche</th>
+            <th scope="col">Prénom du proche</th>
+            <th scope="col">Nom du Patient</th>
+            <th scope="col">Prénom du Patient</th>
+            <th scope="col">âge du patient</th>
+            <th scope="col">Le prénom d'un proche du patient</th>
+            <th scope="col">lien de parenté</th>
+            <th scope="col">Lien vers la photo de cette personne</th>
+            
+            
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of PatientData">
+            
+            <td>{{row.firstName}}</td>
+            <td>{{row.lastName}}</td>
+            <td>{{row.PatientfirstName}}</td>
+            <td>{{row.PatientlastName}}</td>
+            <td>{{row.age}}</td>
+            <td>{{row.Familymember}}</td>
+            <td>{{row.Relationship}}</td>
+            <td>{{row.linktoImage}}</td>
+
+            <td>
+                <button class="btn btn-info "> Edit</button>
+                <button (click)="deletePatient(row)" class="btn btn-danger mx-3"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

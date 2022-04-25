@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "firstName": "test",
+      "lastName": "testztz",
+      "PatientfirstName": "dloeek",
+      "PatientlastName": "fkkr",
+      "age": "krjrj",
+      "Familymember": "frjkgz",
+      "linktoImage": "reajreu"
+    },
+    {
+      "id": 5,
+      "firstName": "anasselayachi2002@gmail.com",
+      "lastName": "Anass",
+      "PatientfirstName": "Elayachi",
+      "PatientlastName": "gtrhtr",
+      "age": "gtrhtr",
+      "Familymember": "btrz",
+      "linktoImage": "fhyrhry"
+    },
+    {
+      "id": 6,
+      "firstName": "Anass",
+      "lastName": "elayachi",
+      "PatientfirstName": "ahmed",
+      "PatientlastName": "emod",
+      "age": "21",
+      "Familymember": "NASSIM",
+      "linktoImage": "HTTPS/SFFVOJER"
+    },
+    {
+      "id": 7,
+      "firstName": "Nicolas",
+      "lastName": "Jean",
+      "PatientfirstName": "Nicolas",
+      "PatientlastName": "ALbert",
+      "age": "64",
+      "Familymember": "Emmanuel",
+      "linktoImage": "google.com"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
