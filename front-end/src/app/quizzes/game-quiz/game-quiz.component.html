@@ -7,20 +7,16 @@
   </div> 
   <div class="QuestionImage">
   <h2 class="question">{{quiz.questions[indexQuestion].label}}</h2>
-    <h1> <img [src]=quiz.questions[indexQuestion].imageUrl></h1> 
+    <h1> <img [src]=quiz.questions[indexQuestion].imageUrl></h1>
   </div>
 
       <div class="btn-container">
-    
-
     
       
       <button value="1" class="AnswerBtn" (click)="answerQuestion(quiz.questions[indexQuestion].answers[0])">{{quiz.questions[indexQuestion].answers[0].value}}</button>
       <button value="2" class="AnswerBtn" (click)="answerQuestion(quiz.questions[indexQuestion].answers[1])">{{quiz.questions[indexQuestion].answers[1].value}}</button>
       <button value="3" class="AnswerBtn" (click)="answerQuestion(quiz.questions[indexQuestion].answers[2])">{{quiz.questions[indexQuestion].answers[2].value}}</button>
-      <button value="4" class="AnswerBtn" (click)="answerQuestion(quiz.questions[indexQuestion].answers[3])">{{quiz.questions[indexQuestion].answers[3].value}}</button>
-
-        
+      <button value="4" class="AnswerBtn" (click)="answerQuestion(quiz.questions[indexQuestion].answers[3])">{{quiz.questions[indexQuestion].answers[3].value}}</button>    
     
 
     
@@ -30,7 +26,12 @@
   <h1>La réponse correcte est : </h1>
   <div class="AffichageResultat" >{{getCorrectAnswer().value}}</div>
 </div> -->
-  <button class="next-Q" (click)="next()">Question suivante</button>
+  <button class="next-Q" (click)="next()">Je ne sais pas</button>
+  <button><a class="navigation" href="stats-quiz">Statistiques</a></button>
+  <div *ngIf="isEnd()">
+    <button><a class="navigation" href="stats-quiz">Statistique</a></button>
+
+  </div>
 </div>
 
 

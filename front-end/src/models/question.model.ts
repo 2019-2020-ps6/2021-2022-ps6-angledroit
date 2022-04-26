@@ -9,4 +9,5 @@ export interface Question {
     label: string;
     answers: Answer[];
     imageUrl?:  string;
+    imageUrl2?:  string;
 }

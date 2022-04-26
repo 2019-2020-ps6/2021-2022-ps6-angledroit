@@ -60,6 +60,13 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
     return this.Score;
   }
 
+  ifError(){
+    if(this.Score<this.indexQuestion){
+      return true;
+    }
+    return false;
+  }
+
   getindexQuestion(){
     return this.indexQuestion;
   }

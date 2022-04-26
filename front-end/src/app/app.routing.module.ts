@@ -9,6 +9,7 @@ import { GameQuizComponent } from './quizzes/game-quiz/game-quiz.component';
 import { PatientDataComponent } from './patient-data/patient-data.component';
 import { TabdonComponent } from './tabdon/tabdon.component';
 import { PagedeconnexionComponent } from './pagedeconnexion/pagedeconnexion.component';
+import { StatsQuizComponent } from './quizzes/stats-quiz/stats-quiz.component';
 
 
 
@@ -18,6 +19,7 @@ const routes: Routes = [
     {path: 'game-quiz/:id', component: GameQuizComponent},
     {path: 'edit-quiz/:id', component: EditQuizComponent},
     {path: 'accueil', component: AccueilComponent},
+    {path: 'stats-quiz', component : StatsQuizComponent},
     {path: 'DataPatient', component : PatientDataComponent},
     {path: 'tabdon', component : TabdonComponent},
     {path: 'pagedeconnexion', component : PagedeconnexionComponent },
