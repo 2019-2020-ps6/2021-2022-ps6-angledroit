@@ -44,8 +44,4 @@ export class RecapComponent implements OnInit {
   }
 
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> parent of 8a1ae90 (Modification et Correction de Tabdon)

@@ -10,7 +10,6 @@ import { PatientDataComponent } from './patient-data/patient-data.component';
 import { TabdonComponent } from './tabdon/tabdon.component';
 import { PagedeconnexionComponent } from './pagedeconnexion/pagedeconnexion.component';
 import { StatsQuizComponent } from './quizzes/stats-quiz/stats-quiz.component';
-import { RecapComponent } from './recap/recap.component';
 
 
 
@@ -25,7 +24,6 @@ const routes: Routes = [
     {path: 'tabdon', component : TabdonComponent},
     {path: 'pagedeconnexion', component : PagedeconnexionComponent },
   {path: 'quiztest', component: QuiztestComponent},
-  {path:'recap', component: RecapComponent},
     { path: '', redirectTo: '/quiz-list', pathMatch: 'full' },
 ];
 

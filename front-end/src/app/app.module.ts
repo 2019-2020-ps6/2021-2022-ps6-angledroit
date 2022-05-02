@@ -23,7 +23,6 @@ import { PatientDataComponent } from './patient-data/patient-data.component';
 import { TabdonComponent } from './tabdon/tabdon.component';
 import { PagedeconnexionComponent } from './pagedeconnexion/pagedeconnexion.component';
 import { StatsQuizComponent } from './quizzes/stats-quiz/stats-quiz.component';
-import { RecapComponent } from './recap/recap.component';
 
 
 
@@ -47,7 +46,6 @@ import { RecapComponent } from './recap/recap.component';
     TabdonComponent,
     PagedeconnexionComponent,
     StatsQuizComponent,
-    RecapComponent,
   ],
   imports: [
     BrowserModule,
