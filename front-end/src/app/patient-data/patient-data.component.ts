@@ -27,7 +27,7 @@ export class PatientDataComponent implements OnInit {
       PatientlastName : [''],
       age : [''],
       Familymember: [''],
-      Relationship : [''],
+      RelationShip : [''],
       linktoImage : ['']
 
 

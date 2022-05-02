@@ -1,41 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": 3,
-      "firstName": "test",
-      "lastName": "testztz",
-      "PatientfirstName": "dloeek",
-      "PatientlastName": "fkkr",
-      "age": "krjrj",
-      "Familymember": "frjkgz",
-      "linktoImage": "reajreu"
-    },
-    {
-      "id": 5,
-      "firstName": "anasselayachi2002@gmail.com",
-      "lastName": "Anass",
-      "PatientfirstName": "Elayachi",
-      "PatientlastName": "gtrhtr",
-      "age": "gtrhtr",
-      "Familymember": "btrz",
-      "linktoImage": "fhyrhry"
-    },
-    {
-      "id": 6,
-      "firstName": "Anass",
-      "lastName": "elayachi",
-      "PatientfirstName": "ahmed",
-      "PatientlastName": "emod",
-      "age": "21",
-      "Familymember": "NASSIM",
-      "linktoImage": "HTTPS/SFFVOJER"
-    },
-    {
       "id": 7,
       "firstName": "Nicolas",
       "lastName": "Jean",
@@ -44,6 +9,27 @@
       "age": "64",
       "Familymember": "Emmanuel",
       "linktoImage": "google.com"
+    },
+    {
+      "id": 8,
+      "firstName": "Emilien",
+      "lastName": "Robert",
+      "PatientfirstName": "Abdel",
+      "PatientlastName": "John",
+      "age": "23",
+      "Familymember": "John",
+      "linktoImage": "http://localhost:4200/DataPatient"
+    },
+    {
+      "id": 9,
+      "firstName": "John",
+      "lastName": "Emmanuel",
+      "PatientfirstName": "Robert",
+      "PatientlastName": "Albert",
+      "age": "25",
+      "Familymember": "Nicolas",
+      "RelationShip": "frere",
+      "linktoImage": "http://localhost:4200/DataPatient"
     }
   ],
   "comments": [
