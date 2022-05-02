@@ -1,15 +1,6 @@
 {
   "posts": [
-    {
-      "id": 7,
-      "firstName": "Nicolas",
-      "lastName": "Jean",
-      "PatientfirstName": "Nicolas",
-      "PatientlastName": "ALbert",
-      "age": "64",
-      "Familymember": "Emmanuel",
-      "linktoImage": "google.com"
-    },
+  
     {
       "id": 8,
       "firstName": "Emilien",
@@ -18,6 +9,7 @@
       "PatientlastName": "John",
       "age": "23",
       "Familymember": "John",
+      "RelationShip":"frere",
       "linktoImage": "http://localhost:4200/DataPatient"
     },
     {

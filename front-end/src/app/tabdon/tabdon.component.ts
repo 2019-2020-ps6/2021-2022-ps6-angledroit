@@ -31,7 +31,7 @@ export class TabdonComponent implements OnInit {
       PatientlastName : [''],
       age : [''],
       Familymember: [''],
-      Relationship : [''],
+      RelationShip : [''],
       linktoImage : ['']
 
 

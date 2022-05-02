@@ -25,7 +25,7 @@ const routes: Routes = [
     {path: 'tabdon', component : TabdonComponent},
     {path: 'pagedeconnexion', component : PagedeconnexionComponent },
   {path: 'quiztest', component: QuiztestComponent},
-  {path:'recap', component: RecapComponent},
+  {path: 'recap', component: RecapComponent},
     { path: '', redirectTo: '/quiz-list', pathMatch: 'full' },
 ];
 
