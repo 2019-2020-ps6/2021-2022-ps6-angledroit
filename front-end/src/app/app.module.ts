@@ -24,7 +24,7 @@ import { TabdonComponent } from './tabdon/tabdon.component';
 import { PagedeconnexionComponent } from './pagedeconnexion/pagedeconnexion.component';
 import { StatsQuizComponent } from './quizzes/stats-quiz/stats-quiz.component';
 import { RecapComponent } from './recap/recap.component';
-
+import { GameQuizComponent } from './quizzes/game-quiz/game-quiz.component';
 
 
 @NgModule({
@@ -48,6 +48,7 @@ import { RecapComponent } from './recap/recap.component';
     PagedeconnexionComponent,
     StatsQuizComponent,
     RecapComponent,
+    GameQuizComponent,
   ],
   imports: [
     BrowserModule,
