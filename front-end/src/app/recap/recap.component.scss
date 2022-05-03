@@ -16,11 +16,13 @@
   }
   
   .question{
-    width: 800px;
+    width: 1800px;
+    font-size: large;
   }
   .answer{
     text-align: center;
-    width : 100px
+    width : 500px;
+    font-size: large;
   }
   
   .title {
@@ -40,15 +42,15 @@
   
   
   .image{
-    width : 140px;
-    height : 100px;
+    width : 240px;
+    height : 200px;
   }
   
   table {
     margin: 0 auto;
     border-collapse: collapse;
     border-style: hidden;
-    font-size: 18px;
+    font-size: 28px;
     border: 2px solid black;
   
   }
