@@ -26,7 +26,7 @@ export class GameQuizComponent implements OnInit {
 constructor(private route: ActivatedRoute, private quizService: QuizService,) {
     this.quizService.quizSelected$.subscribe((quiz) => {
       this.quiz = quiz;
-      console.log(quiz)
+      console.log(quiz);
     });
   }
 
@@ -36,7 +36,7 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
   }
 
   isEnd() {
-    return this.indexQuestion >= this.quiz.questions.length;
+    return (this.indexQuestion >= this.quiz.questions.length);
   }
 
   next(){
