@@ -1,10 +1,10 @@
 
 <body >
 <div class="Quiz-Page" *ngIf="quiz && !isEnd()">
-  <h1>Quiz</h1>
+  <h1></h1>
   <div class="QuestionImage">
   <h2 class="question">{{quiz.questions[indexQuestion].label}}</h2>
-    <h1> <img [src]=quiz.questions[indexQuestion].imageUrl></h1>
+    <h1 class="image"> <img [src]=quiz.questions[indexQuestion].imageUrl></h1>
   </div>
 
       <div class="btn-container" *ngFor="let answer of quiz.questions[indexQuestion].answers">
@@ -14,12 +14,21 @@
 
 
     </div>
+    
+                  
+                    
+
+    
+
+
+
+    
 
 <div *ngIf="resultAffiche">
   <h1>La réponse correcte est : </h1>
-  <div class="AffichageResultat" >{{getCorrectAnswer().value}}</div>
+  <div class="affichageResultat" >{{getCorrectAnswer().value}}</div>
 </div>
-  <button class="next-Q" (click)="next()">Je ne sais pas</button>
+  <!-- <button class="next-Q" (click)="next()">Je ne sais pas</button> -->
 
 </div>
 

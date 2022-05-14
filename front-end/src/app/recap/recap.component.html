@@ -1,32 +1,14 @@
 <div class='card-play'>
-    <div class ="title"> Recapitulatif Final</div>
-      <table class="table">
-        <tr >
-        
-            <td class="question"><h5>Connaissez-vous cette personne?</h5></td>
-            <td class="answer"><h5>Oui</h5>  
-                <br><img class="image" src="https://plateforme.com/wp-content/uploads/2016/09/EKLAND-Louise-2_Fotor.jpg">
-            </td>
-    
-            <td class="question">  <h5>Qui est-ce?</h5></td>
-            <td class="answer"><h5>Votre mère</h5>
-              <br><img class="image" src="https://plateforme.com/wp-content/uploads/2016/09/EKLAND-Louise-2_Fotor.jpg" >
-            </td>
-    
-            <td class="question"><h5>Comment s'appelle t'elle?</h5>  </td>
-            <td class="answer"><h5>Charlotte</h5> 
-              <br><img class="image" src="https://plateforme.com/wp-content/uploads/2016/09/EKLAND-Louise-2_Fotor.jpg">
-            </td>
-    
-            <td class="question"><h5>Quel age a-t-elle?</h5>  </td>
-            <td class="answer"><h5>30ans</h5>
-              <br><img class="image" src="https://plateforme.com/wp-content/uploads/2016/09/EKLAND-Louise-2_Fotor.jpg">
-            </td>
-    
-          </tr>
-       
-      </table>
-      <br>
+  <div class ="title"> Recapitulatif Final</div>
+    <table class="table">
+      <tr *ngFor="let question of questions; let q=indexQuestion;">
+        <td class="question">{{ question.label }}</td>
+        <td class="answer">{{getCorrectAnswer(q).value}} 
+          <br><img class="image"  src="{{getCorrectAnswer(q).image}}">
+        </td>
+      </tr>
+    </table>
+    <br>
       <div class="buttons">
       
       <a href="quiz-list" class="button_rep">Refaire le quiz</a>

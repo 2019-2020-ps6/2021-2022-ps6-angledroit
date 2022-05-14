@@ -15,8 +15,6 @@ export class RecapComponent implements OnInit {
   public quiz: Quiz;
   
 
-  indexQuestion: number=0;
-
   @Input()
   questions : Question[]
 
@@ -29,9 +27,6 @@ export class RecapComponent implements OnInit {
     this.quizService.setSelectedQuiz(id);
   }
 
-  getindexQuestion(){
-    return this.indexQuestion;
-  }
 
   
 
@@ -42,6 +37,12 @@ export class RecapComponent implements OnInit {
       }
     }
   }
+
+  replay(){
+    window.location.reload();
+  }
+
+  
 
 }
 

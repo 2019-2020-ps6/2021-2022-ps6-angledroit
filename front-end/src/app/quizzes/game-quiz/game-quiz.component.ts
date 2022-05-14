@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { doesNotReject } from 'assert';
 import { Answer, Question } from 'src/models/question.model';
 import { Quiz } from 'src/models/quiz.model';
 import { QuizService } from 'src/services/quiz.service';
@@ -48,12 +49,23 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
     return question.answers;
   }
 
+  
+
   getCorrectAnswer() {
     for(let i = 0;i<4;i++){
       if(this.quiz.questions[this.indexQuestion].answers[i].isCorrect){
         return this.quiz.questions[this.indexQuestion].answers[i];
+        //setTimeout(()=> {
+        //return this.quiz.questions[this.indexQuestion].answers[i];
+          
+        //},10000);
+        
+
+        
+
       }
     }
+    
   }
 
   getScore(){
