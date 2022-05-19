@@ -1,28 +1,21 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
-<div class="wrapper fadeInDown">
-  <div id="formContent">
-    <!-- Tabs Titles -->
+      <body>
+        <header>
+            <h1>Connexion</h1>
+        </header>
+        <main>
+            <form id="login_form" class="form_class">
+                <div class="form_div">
+                    <label>Nom d'utilisateur:</label>
+                    <input class="field_class" name="login_txt" type="text" placeholder="Entrer le nom d'utilisateur" autofocus>
+                    <label>Mot de passe:</label>
+                    <input id="pass" class="field_class" name="password_txt" type="password" placeholder="Entrer le mot de passe">
+                    <a class="submit_class" href="quiz-list" type="submit" form="login_form" >Entrer</a>
+                </div>
+                
+            </form>
+        </main>
+      
+      </body>
 
-    <!-- Icon -->
-    <div class="fadeIn first">
-      <img src="https://img1.freepng.fr/20180621/oqs/kisspng-computer-icons-login-icon-design-5b2c211fdc13c5.2385363615296187199015.jpg" id="icon" alt="User Icon" />
-    </div>
-
-    <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-      <input type="button" onclick="window.location.href = 'http://localhost:4200/quiz-list';" class="fadeIn fourth" value="Log In" name="submit" >
-    </form>
-    <a routerLink="/signup">New user? Click to signup</a>
-
-    <!-- Remind Passowrd -->
-
-
-  </div>
-</div>
-
+      

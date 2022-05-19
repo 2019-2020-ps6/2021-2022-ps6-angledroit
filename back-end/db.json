@@ -1,0 +1,26 @@
+{
+  "posts": [
+   
+    {
+      "id": 2,
+      "firstName": "Omar",
+      "lastName": "Anass",
+      "PatientfirstName": "Albert",
+      "PatientlastName": "Albert",
+      "age": "24",
+      "Familymember": "Jean",
+      "RelationShip": "frere",
+      "linktoImage": "http://localhost:4200"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
