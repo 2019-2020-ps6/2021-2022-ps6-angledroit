@@ -1,107 +1,80 @@
-    
-        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >Entrer les données</button> -->
+<div class="accueil">
+<h1>Entrer les informations de votre proche</h1>
+</div>
+<div class="d-flex">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >Entrer les données</button>
+</div>
 
-  <body>
-    <header>
-        <h1>Formulaire</h1>
-    </header>
-    <main>
-        <form id="login_form" class="form_class">
-            <div class="form_div">
-              <label>Ces données seront utilisées </label>
-              <label>pour créer un quiz.</label>
-                <label>Remplissez ce formulaire:</label>
-                
-              <div class="d-flex">
-                <button type="button" class="btn btn-primary btn-lg mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal" >Entrer les données</button>
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"></h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="formValue">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Votre Nom</label>
+              <input type="text" formControlName="firstName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Votre prenom</label>
+              <input type="text" formControlName="lastName" class="form-control" id="exampleInputPassword1" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Nom du patient</label>
+                <input type="text" formControlName="PatientfirstName" class="form-control" id="exampleInputPassword1" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Prénom du patient</label>
+                <input type="text" formControlName="PatientlastName" class="form-control" id="exampleInputPassword1" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">âge du patient</label>
+                <input type="text" formControlName="age" class="form-control" id="exampleInputPassword1" placeholder="">
               </div>
               
               
-                
-                
-                <!-- <a class="submit_class" href="quiz-list" type="submit" form="login_form" >Entrer</a> -->
-            </div>
-            
-            
-        </form>
-        
-    </main>
-    
-  
-  </body>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Le prénom d'un proche du patient</label>
+                <input type="text" formControlName="Familymember" class="form-control" id="exampleInputPassword1" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Lien de parenté avec cette personne</label>
+                <input type="text" formControlName="Relationship" class="form-control" id="exampleInputPassword1" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Photo de cette personne(lien vers l'image)</label>
+                <input type="text" formControlName="linktoImage" class="form-control" id="exampleInputPassword1" placeholder="">
+              </div>
+              
 
-<body>
-  <div class="container-fluid">
-    
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Formulaire</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <form [formGroup]="formValue">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Votre Nom</label>
-                  <input type="text" formControlName="firstName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
-                  
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Votre prenom</label>
-                  <input type="text" formControlName="lastName" class="form-control" id="exampleInputPassword1" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Nom du patient</label>
-                    <input type="text" formControlName="PatientfirstName" class="form-control" id="exampleInputPassword1" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Prénom du patient</label>
-                    <input type="text" formControlName="PatientlastName" class="form-control" id="exampleInputPassword1" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">âge du patient</label>
-                    <input type="text" formControlName="age" class="form-control" id="exampleInputPassword1" placeholder="">
-                  </div>
-                  
-                  
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Le prénom d'un proche du patient</label>
-                    <input type="text" formControlName="Familymember" class="form-control" id="exampleInputPassword1" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Lien de parenté avec cette personne</label>
-                    <input type="text" formControlName="RelationShip" class="form-control" id="exampleInputPassword1" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Photo de cette personne(lien vers l'image)</label>
-                    <input type="text" formControlName="linktoImage" class="form-control" id="exampleInputPassword1" placeholder="">
-                  </div>
-                  
-
-              </form>
+          </form>
 
 
-          
-        </div>
-        <div class="modal-footer">
-          <button type="button" id="cancel" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" (click)="postPatientData()" class="btn btn-primary">Add</button>
-        </div>
-      </div>
+      
+    </div>
+    <div class="modal-footer">
+      <button type="button" id="cancel" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" (click)="postPatientData()" class="btn btn-primary">Add</button>
     </div>
   </div>
-
 </div>
-
-</body>
-    
-
-
-
-
+</div>
 
   
   

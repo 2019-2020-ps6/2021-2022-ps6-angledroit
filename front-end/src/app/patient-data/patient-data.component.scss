@@ -1,122 +1,14 @@
-* {
-    padding: 0px;
-    margin: 0px;
-  }
-  body {
-    background-color: lightgreen;
-  }
-  header {
-    background-color: rgb(43, 64, 122);
-    color: white;
+.accueil{
+  height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15vh;
-    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
-  }
-  h1 {
-    letter-spacing: 0vw;
-    font-family: 'Zen Dots';
-    text-transform: uppercase;
-    text-align: center;
-  }
-  main {
-    display: flex;
-    align-items: center;
+    font-size: xx-large;
+}
+
+.d-flex{
+  align-items: center;
     justify-content: center;
-    height: 89vh;
-    width: 100%;
-    
-    background: url("https://images.pexels.com/photos/339620/pexels-photo-339620.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center center;
-    background-size: cover;
-  }
+    font-size:xx-large ;
 
-  .inner{
-      margin: auto;
-      width: 100px;
-      height: 100px;
-  }
-
-  .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 20px 82px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 22px;
-    width: 9;
-    margin: 0 auto;
-    
-    
-    
-  }
-  .form_class {
-    width: 500px;
-    padding: 80px;
-    border-radius: 8px;
-    background-color: whitesmoke;
-    font-family: 'Zen Dots';
-    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
-    opacity: 0.9;
-  }
-
-  .form_div > label {
-    letter-spacing: 0px;
-    font-size: 1.6rem;
-    white-space:nowrap;
-  }
-  .info_div {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .info_div {
-    letter-spacing: 0px;
-  }
-  .field_class {
-    width: 100%;
-    border-radius: 6px;
-    border-style: solid;
-    border-width: 1px;
-    padding: 5px 0px;
-    text-indent: 6px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: 'Zen Dots', cursive;
-    font-size: 0.9rem;
-    letter-spacing: 0px;
-  }
-  .submit_class {
-    border-style: none;
-    border-radius: 5px;
-    background-color: #FFE6D4;
-    padding: 8px 20px;
-    font-family: 'Zen Dots', cursive;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-    box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
-    cursor: pointer;
-  }
-  footer {
-    height: 10vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: -5px -5px 10px rgb(0,0,0,0.3);
-  }
-  footer > p {
-    text-align: center;
-    font-family: 'Zen Dots', cursive;
-    letter-spacing: 0px;
-  }
-  footer > p > a {
-    text-decoration: none;
-    color: white;
-    
-  }
+}
