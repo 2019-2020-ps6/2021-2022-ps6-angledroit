@@ -1,17 +1,10 @@
-// * {
-//     padding: 0;
-//     margin: 0;
-//     -webkit-box-sizing: border-box;
-//     box-sizing: border-box;
-//   }
-
   body {
     background: #2e3f64;
     background-size: cover;
     overflow: hidden;
     margin: auto;
-    
-    
+
+
   }
 
   .affichageResultat{
@@ -27,10 +20,6 @@
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    
-    
-    
-
   }
 
   .question {
@@ -43,7 +32,7 @@
     text-align: center;
     margin: auto;
     border-radius: 10px;
-    
+
 
   }
 
@@ -54,13 +43,13 @@
   border : solid 4px rgb(11, 4, 88)  ;
   padding : 0.5em;
   font-weight: bold;
-  width: 250px;
+  width: 300px;
   color : rgb(11, 4, 88);
-  font-size: 20px;
-  width: 250px;
+  font-size: 40px;
   cursor : pointer;
   margin-right: 50px;
   margin-left:50px;
+
   }
 
   .AnswerBtn:hover{
@@ -97,28 +86,6 @@
 
   }
 
-  .next-Q {
-    margin: 5pc 0 0 37.5pc;
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px);
-    border: none;
-    outline: none;
-    padding: 10px 2.5pc 10px 2pc;
-    border-radius: 10px;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: 4.4pc 7px;
-    background-color: white;
-    -webkit-transition: .5s;
-    transition: .5s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-
-  .next-Q:hover {
-    opacity: .7;
-
-  }
-
   .Quiz-EndPage h1 {
     color: white;
     font-family: 'Zen Dots', cursive;
@@ -133,7 +100,7 @@
   }
 
   .stats {
-    background: #2e3f64;
+    background: #ffffff;
     font-family: 'Zen Dots', cursive;
   }
 
@@ -144,5 +111,5 @@
   }
 
 
-  
+
 

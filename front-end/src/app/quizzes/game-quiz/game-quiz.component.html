@@ -14,33 +14,17 @@
 
 
     </div>
-    
-                  
-                    
-
-    
-
-
-
-    
-
-<div *ngIf="resultAffiche">
-  <h1>La réponse correcte est : </h1>
-  <div class="affichageResultat" >{{getCorrectAnswer().value}}</div>
-</div>
-  <!-- <button class="next-Q" (click)="next()">Je ne sais pas</button> -->
 
 </div>
 
 <div class="Quiz-EndPage" *ngIf="quiz && isEnd()">
   <h1>Fin du Quiz</h1>
   <div class="Score">
-    <h3 class="Score">{{getScore()}}/{{getindexQuestion()}}</h3>
+    <h3 class="Score">{{getScore()}}/{{this.quiz.questions.length}}</h3>
   </div>
   <div class="Image">
     <h1> <img src="https://pbs.twimg.com/media/DaqTtslXUAE_dIa.jpg"></h1>
     <button><a class="stats" href="stats-quiz">Statistiques</a></button>
-    <button><a class="quiz-list" href="quiz-list">Quiz</a></button>
   </div>
 
 </div>

@@ -49,7 +49,7 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
     return question.answers;
   }
 
-  
+
 
   getCorrectAnswer() {
     for(let i = 0;i<4;i++){
@@ -57,26 +57,22 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
         return this.quiz.questions[this.indexQuestion].answers[i];
         //setTimeout(()=> {
         //return this.quiz.questions[this.indexQuestion].answers[i];
-          
         //},10000);
-        
-
-        
-
       }
     }
-    
+
   }
 
   getScore(){
     return this.Score;
   }
 
-  ifError(){
-    if(this.Score<this.indexQuestion){
-      return true;
+  ifCorrect1stQuestion(){
+    for(let i = 0;i<2;i++){
+          if(this.quiz.questions[0].answers[i].isCorrect){
+            return this.quiz.questions[this.indexQuestion].answers[i];
+          }
     }
-    return false;
   }
 
   getindexQuestion(){
@@ -88,10 +84,13 @@ constructor(private route: ActivatedRoute, private quizService: QuizService,) {
     setTimeout(()=> {
       this.resultAffiche = false;
       this.indexQuestion++;
-    },1000);
+    },100);
   }
 
   answerQuestion(answer : Answer){
+    if(!answer.isCorrect && this.indexQuestion==0){
+       this.indexQuestion=this.quiz.questions.length;
+      }
     if(answer.isCorrect) {
       this.Score++;
     }

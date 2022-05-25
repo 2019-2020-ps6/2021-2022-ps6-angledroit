@@ -25,6 +25,7 @@ import { PagedeconnexionComponent } from './pagedeconnexion/pagedeconnexion.comp
 import { StatsQuizComponent } from './quizzes/stats-quiz/stats-quiz.component';
 import { RecapComponent } from './recap/recap.component';
 import { GameQuizComponent } from './quizzes/game-quiz/game-quiz.component';
+import { ManagementQuizComponent} from './quizzes/management-quiz/management-quiz.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { GameQuizComponent } from './quizzes/game-quiz/game-quiz.component';
     StatsQuizComponent,
     RecapComponent,
     GameQuizComponent,
+    ManagementQuizComponent,
   ],
   imports: [
     BrowserModule,

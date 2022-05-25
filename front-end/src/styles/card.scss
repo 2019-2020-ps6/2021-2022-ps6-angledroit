@@ -1,7 +1,7 @@
 @import "./variables";
 
 .card {
-  background: $white;
+  background: white;
   border-radius: 2px;
   display: inline-block;
   margin: 1rem;
@@ -11,13 +11,16 @@
 }
 
 .button-card {
+  margin-top: 10px;
   background-color: $white;
-  border: solid 1px $blue;
-  color: $blue;
+  border: solid 1px #000000;
+  color: darkblue;
   font-weight: bold;
   padding: 0.5em 1em;
 }
 
 .button-card:hover {
   cursor: pointer;
+  background: lightblue;
+  color: #fff;
 }

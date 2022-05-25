@@ -1,0 +1,16 @@
+<app-quiz-form></app-quiz-form>
+<div class="management-quiz">
+    <div class="quiz" *ngFor="let quiz of quizList">
+        <!--Inputs & Output allow communication between parent & child components.-->
+        <!--More information: https://angular.io/guide/component-interaction-->
+      <div class="card">
+        <h2>
+          {{quiz.name}}
+        </h2>
+        <button class="button-card select" (click)="quizSelected(quiz)">Play</button>
+        <button class="button-card edit" routerLink="/edit-quiz/{{quiz.id}}">Edit</button>
+        <button class="button-card delete" (click)="delete()">Delete</button>
+
+      </div>
+    </div>
+  </div>
