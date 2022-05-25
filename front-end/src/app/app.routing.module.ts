@@ -11,6 +11,7 @@ import { TabdonComponent } from './tabdon/tabdon.component';
 import { PagedeconnexionComponent } from './pagedeconnexion/pagedeconnexion.component';
 import { StatsQuizComponent } from './quizzes/stats-quiz/stats-quiz.component';
 import { RecapComponent } from './recap/recap.component';
+import { ManagementQuizComponent} from './quizzes/management-quiz/management-quiz.component';
 
 
 
@@ -20,6 +21,7 @@ const routes: Routes = [
     {path: 'game-quiz/:id', component: GameQuizComponent},
     {path: 'edit-quiz/:id', component: EditQuizComponent},
     {path: 'accueil', component: AccueilComponent},
+    {path: 'management-quiz', component: ManagementQuizComponent},
     {path: 'stats-quiz', component : StatsQuizComponent},
     {path: 'DataPatient', component : PatientDataComponent},
     {path: 'tabdon', component : TabdonComponent},

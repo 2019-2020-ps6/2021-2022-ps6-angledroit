@@ -1,0 +1,70 @@
+.management-quiz {
+  display: flex;
+}
+
+.management-quiz h2 {
+ margin-left: auto;
+ margin-right: auto;
+ width: 200px;
+ text-align: center;
+ font-size: 50px;
+}
+
+.select {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.3em;
+  width: 80%;
+  background-color:  #f2fdff;
+  border : solid 2px rgb(11, 4, 88)  ;
+  padding : 0.5em;
+  font-weight: bold;
+  color : rgb(11, 4, 88);
+  font-size: 30px;
+  cursor : pointer;
+}
+
+.select:hover {
+  background: lightblue;
+  color: #fff;
+}
+
+.edit {
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 0.3em;
+     width: 80%;
+     background-color:  #f2fdff;
+     border : solid 2px rgb(11, 4, 88)  ;
+     padding : 0.5em;
+     font-weight: bold;
+     color : rgb(11, 4, 88);
+     font-size: 30px;
+     cursor : pointer;
+}
+
+.edit:hover {
+  background: lightblue;
+  color: #fff;
+}
+
+.delete {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.3em;
+    width: 80%;
+    background-color:  #f2fdff;
+    border : solid 2px rgb(11, 4, 88)  ;
+    padding : 0.5em;
+    font-weight: bold;
+    color : rgb(11, 4, 88);
+    font-size: 30px;
+    cursor : pointer;
+  margin-bottom: 0.3em;
+
+}
+
+.delete:hover {
+  background: lightblue;
+  color: #fff;
+}
